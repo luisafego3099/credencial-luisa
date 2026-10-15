@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credencial Digital</title>
+    <!-- Enlace para cargar los iconos de Font Awesome requeridos -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        /* Estilos globales para centrar la credencial completamente en la pantalla */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contenedor principal de la tarjeta de la credencial */
+        .card {
+            background-color: #ffffff;
+            width: 360px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        /* Encabezado decorativo */
+        .card-header {
+            background-color: #0d6efd;
+            height: 90px;
+            position: relative;
+        }
+
+        /* Avatar o foto de perfil requerida */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            object-fit: cover;
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #e9ecef;
+        }
+
+        /* Sección de contenidos y datos */
+        .card-body {
+            padding: 65px 25px 15px 25px;
+        }
+
+        /* Nombre requerido */
+        .name {
+            font-size: 1.5rem;
+            color: #212529;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        /* Rol profesional requerido */
+        .role {
+            font-size: 1rem;
+            color: #0d6efd;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        /* Frase personal requerida */
+        .quote {
+            font-style: italic;
+            color: #6c757d;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        /* Lista de detalles adicionales ordenados en bloques */
+        .info-list {
+            text-align: left;
+            border-top: 1px solid #dee2e6;
+            padding-top: 15px;
+        }
+
+        /* Estilo para cada fila de datos e iconos */
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #495057;
+        }
+
+        /* Iconos de Font Awesome requeridos (Mínimo 3, aquí usamos más para una mejor presentación) */
+        .info-item i {
+            color: #0d6efd;
+            width: 25px;
+            font-size: 1.1rem;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        .info-item strong {
+            color: #212529;
+            margin-right: 5px;
+        }
+
+        /* Estilo para los enlaces de redes sociales como GitHub */
+        .info-item a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tarjeta Credencial -->
+    <div class="card">
+        <div class="card-header">
+            <!-- 1. Avatar o foto (Imagen de marcador de posición ficticia) -->
+            <img src="avatar-credencial.jpeg" alt="Avatar" class="avatar">
+        </div>
+        
+        <div class="card-body">
+            <!-- 2. Nombre (Ficticio) -->
+            <div class="name">Luisa Gómez</div>
+            
+            <!-- 3. Rol profesional -->
+            <div class="role">Junior full stack Java</div>
+            
+            <!-- 4. Frase personal -->
+            <div class="quote">"El único modo de hacer un gran trabajo es amar lo que haces."</div>
+            
+            <!-- Lista con los datos restantes acompañados de iconos de Font Awesome -->
+            <div class="info-list">
+                
+                <!-- 5. Ciudad (Acompañado de icono) -->
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Ciudad:</strong> Bogotá, Colombia
+                </div>
+                
+                <!-- 6. Correo ficticio (Acompañado de icono) -->
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Correo:</strong> luisagomez@javades.org
+                </div>
+                
+                <!-- 7. Tecnología favorita (Acompañado de icono) -->
+                <div class="info-item">
+                    <i class="fas fa-code"></i>
+                    <strong>Tecnología fav:</strong> HTML & CSS
+                </div>
+                
+                <!-- 8. Hobby (Acompañado de icono) -->
+                <div class="info-item">
+                    <i class="fas fa-gamepad"></i>
+                    <strong>Hobby:</strong> Fotografía y diseño
+                </div>
+                
+                <!-- 9. GitHub (Acompañado de icono y enlace) -->
+                <div class="info-item">
+                    <i class="fab fa-github"></i>
+                    <strong>GitHub:</strong> <a href="#" onclick="return false;">@luisafego3099</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
